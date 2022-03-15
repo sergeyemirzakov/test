@@ -6091,6 +6091,12 @@ textarea.form-control-lg {
   -webkit-box-orient: vertical;
 }
 
+.popular__tours-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
 .about__description {
   text-align: center;
   margin-bottom: 100px;
@@ -6192,8 +6198,12 @@ textarea.form-control-lg {
     margin-bottom: 30px;
   }
 }
+.tours {
+  margin: 105px 0 140px 0;
+}
+
 .footer {
-  margin-top: 150px;
+  margin-top: 120px;
 }
 .footer__items {
   display: flex;
@@ -6279,7 +6289,6 @@ img {
 }
 
 body {
-  padding: 30px;
   background-color: white;
   color: #547382;
   font-size: 1.6rem;
@@ -6302,27 +6311,36 @@ body {
   background-image: url("../img/main-screen.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  height: 875px;
+  background-size: cover;
+  height: 100vh;
   width: 100%;
-  border-radius: 10px;
+}
+
+.main__screen-tours {
+  background-image: url("../img/tours.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
 }
 
 .visit {
   background-image: url("../img/visit.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   height: 513px;
   width: 100%;
-  border-radius: 10px;
 }
 
 .recomend {
   background-image: url("../img/recomend.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   height: 541px;
   width: 100%;
-  border-radius: 10px;
 }
 
 .base-btn {
@@ -6422,16 +6440,7 @@ body {
   padding-bottom: 15px;
 }
 
-@media (max-width: 768px) {
-  body {
-    padding: 20px;
-  }
-}
 @media (max-width: 576px) {
-  body {
-    padding: 10px;
-  }
-
   .base-btn {
     padding: 20px 50px;
     font-size: 2rem;
