@@ -5894,6 +5894,8 @@ textarea.form-control-lg {
   transform: translate(-50%, -50%);
   max-width: 450px;
   width: 100%;
+  height: fit-content;
+  overflow-y: auto;
 }
 
 .popup__items {
@@ -5917,6 +5919,12 @@ textarea.form-control-lg {
   cursor: pointer;
 }
 
+@media only screen and (max-height: 650px) {
+  .popup__items {
+    max-height: 450px;
+    overflow-y: auto;
+  }
+}
 .header {
   margin-top: 45px;
   position: absolute;
