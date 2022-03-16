@@ -5,14 +5,58 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.min.css" />
-  <title>Ещё одна страница</title>
+  <title>ASVT Vip Travel - Гастрономический тур</title>
 </head>
 
   <body>
-    <header class="header">
+    <div class="popup__overlay"></div>
+<div class="popup__content">
+  <div class="popup__items">
+    <div class="popup__header">
+      <div class="popup__title">Форма обратной связи</div>
+      <div class="popup__close">
+        <svg
+          version="1.1"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 371.23 371.23"
+          style="enable-background: new 0 0 371.23 371.23"
+          xml:space="preserve"
+        >
+          <polygon
+            points="371.23,21.213 350.018,0 185.615,164.402 21.213,0 0,21.213 164.402,185.615 0,350.018 21.213,371.23 
+185.615,206.828 350.018,371.23 371.23,350.018 206.828,185.615 "
+          />
+        </svg>
+      </div>
+    </div>
+    <form action="">
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Имя" />
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" placeholder="Email" />
+      </div>
+      <div class="mb-3">
+        <textarea
+          class="form-control form-control-lg base-textarea"
+          rows="3"
+          placeholder="Ваше сообщение"
+        ></textarea>
+      </div>
+      <div class="mt-2" style="text-align: center">
+        <button class="popup__form-btn base-btn-second">Отправить</button>
+      </div>
+    </form>
+  </div>
+</div>
+ <header class="header">
   <div class="container">
     <div class="header__items">
-      <a href="/" class="header__logo">
+      <a href="/index.html" class="header__logo">
         <svg
           width="171"
           height="64"
@@ -71,7 +115,79 @@
 </header>
 
     <main>
-      <p>Еще одна страница для примера12213</p>
+      <div class="main__screen-tour">
+        <div class="container">
+          <div class="main__screen-items">
+            <h1 class="main__screen-title">Гастрономический тур</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="program">
+        <div class="container">
+          <div class="program__items">
+            <div class="program__item">
+              <div class="program__header">
+                <div class="program__day">
+                  <div class="program__day-text">День 1</div>
+                </div>
+                <div class="program__city">Ташкент</div>
+              </div>
+              <div class="program__description">
+                <p class="program__description-text">
+                  Прибытие в Ташкент.Экскурсия по г.Ташкенту .Размещение в отеле. Обед и
+                  ужин в местном ресторане. Ночь в отеле.
+                </p>
+              </div>
+            </div>
+            <div class="program__item">
+              <div class="program__header">
+                <div class="program__day">
+                  <div class="program__day-text">День 2</div>
+                </div>
+                <div class="program__city">Ташкент-Самарканд</div>
+              </div>
+              <div class="program__description">
+                <p class="program__description-text">
+                  Переезд в Самарканд на скоростном поезде Афросиаб в пути 2 часа 10 мин
+                  300 км.Экскурсия по г.Самарканду.Обед (мастер класс по приготовлению
+                  национальных блюд) и ужин в местных ресторанах и размещение в отеле.
+                </p>
+              </div>
+            </div>
+            <div class="program__item">
+              <div class="program__header">
+                <div class="program__day">
+                  <div class="program__day-text">День 3</div>
+                </div>
+                <div class="program__city">Самарканд-Бухара</div>
+              </div>
+              <div class="program__description">
+                <p class="program__description-text">
+                  Переезд из Самарканда в Бухару на скоростном поезде Афросиаб 1 час 30
+                  мин 300 км . Экскурсия по г.Бухара. Обед и мастер класс национального
+                  блюда в традиционном доме Бухары.Трансфер в аэропорт г.Бухары.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="visit">
+  <div class="container">
+    <div class="visit__items">
+      <h3 class="visit__title base-title-second">
+        Хотите посетить узбекистан? напишите нам!
+      </h3>
+      <div class="visit__desciption base-desc">
+        Наши специалисты разъяснят вам все нюансы и подберут для вас туры
+      </div>
+      <button class="visit__btn base-btn-second popup__trigger">Написать нам</button>
+    </div>
+  </div>
+</section>
+
     </main>
     <footer class="footer">
   <div class="container">
@@ -139,6 +255,6 @@
   </div>
 </footer>
 
-    <a href="#form-question">GO OG</a>
+    <script src="js/app.min.js"></script>
   </body>
 </html>

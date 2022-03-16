@@ -6202,6 +6202,91 @@ textarea.form-control-lg {
   margin: 105px 0 140px 0;
 }
 
+.program {
+  margin-top: 95px;
+}
+
+.program__header {
+  display: flex;
+  align-items: center;
+}
+
+.program__day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 60px;
+  clip-path: polygon(0 0, 100% 0%, 85% 99%, 0 100%);
+  background-color: #fe9050;
+  color: white;
+  margin-right: 30px;
+  position: relative;
+}
+.program__day-text {
+  position: absolute;
+  top: 50%;
+  left: 46%;
+  transform: translate(-46%, -50%);
+  font-family: Helvetica, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+
+.program__city {
+  color: #333333;
+  font-size: 2.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.program__description {
+  margin: 57px 0 100px 0;
+}
+.program__description-text {
+  font-size: 1.8rem;
+  color: #547382;
+}
+
+@media (max-width: 768px) {
+  .program__day {
+    width: 220px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  .program__day-text {
+    font-family: Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+  .program__city {
+    font-size: 2rem;
+  }
+
+  .program__description {
+    margin: 40px 0 80px 0;
+  }
+}
+@media (max-width: 576px) {
+  .program__day {
+    width: 170px;
+    height: 40px;
+  }
+  .program__day-text {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.7rem;
+    font-weight: 900;
+  }
+
+  .program__city {
+    font-size: 2rem;
+  }
+
+  .program__description {
+    margin: 30px 0 60px 0;
+  }
+}
 .footer {
   margin-top: 120px;
 }
@@ -6325,6 +6410,15 @@ body {
   width: 100%;
 }
 
+.main__screen-tour {
+  background-image: url("../img/tour.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
+
 .visit {
   background-image: url("../img/visit.jpg");
   background-repeat: no-repeat;
@@ -6440,6 +6534,11 @@ body {
   padding-bottom: 15px;
 }
 
+@media (max-width: 768px) {
+  .main__screen-title {
+    font-size: 3.7rem;
+  }
+}
 @media (max-width: 576px) {
   .base-btn {
     padding: 20px 50px;
@@ -6453,5 +6552,14 @@ body {
 
   .base-title {
     font-size: 3.4rem;
+  }
+
+  .main__screen-title {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 420px) {
+  .main__screen-title {
+    font-size: 2.7rem;
   }
 }
